@@ -20,12 +20,35 @@ Apple, Inc, 2016. Profit of $162.73.
 ![GOOG_8_2017](https://github.com/edwardhdlu/q-trader/blob/master/images/GOOG_8_2017.png)
 Google, Inc, August 2017. Profit of $19.37.
 
+
+
+## 🛠 Install
+
+Use **Python 3**. This code has been developed and tested using Python 3.12.0.
+
+1. Create a virtual environment:
+   ```bash
+   python3 -m venv venv
+   ```
+
+2. Activate the virtual environment:
+
+   ```bash
+   source venv/bin/activate
+   ```
+
+3. Install the required Python packages:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
 ## Running the Code
 
 To train the model, download a training and test csv files from [Yahoo! Finance](https://ca.finance.yahoo.com/quote/%5EGSPC/history?p=%5EGSPC) into `data/`
 ```
 mkdir model
-python train ^GSPC 10 1000
+python train.py ^GSPC 10 1000
 ```
 
 Then when training finishes (minimum 200 episodes for results):
